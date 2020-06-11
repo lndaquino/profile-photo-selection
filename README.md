@@ -4,22 +4,43 @@ This project provides an typescript component to update the profile photo with c
 in the computer or a picture taken with the camera.
 
 It starts showing a default profile photo:
+
+
 ![profile-photo](https://github.com/lndaquino/profile-photo-selection/blob/master/src/profile-photo.png?raw=true)
 
+
+
 Clicking in the small orange camera icon, it opens a modal to select the photo source:
+
 ![modal-input-selection](https://github.com/lndaquino/profile-photo-selection/blob/master/src/modal-input-type-selection.png?raw=true)
 
+
+
 If you choose a file from the computer, it opens the dinamic crop modal with preview:
+
 ![modal-input-selection](https://github.com/lndaquino/profile-photo-selection/blob/master/src/adjusting-photo.png?raw=true)
+
+
 
 If you choose to take a picture, it opens the modal that use the camera to take a picture:
+
 ![modal-input-selection](https://github.com/lndaquino/profile-photo-selection/blob/master/src/taking-picture.png?raw=true)
 
+
+
 After taking the picture it opens the dinamic crop modal with preview:
-![modal-input-selection](https://github.com/lndaquino/profile-photo-selection/blob/master/src/adjusting-photo.png?raw=true)
+
+
+![modal-input-selection](https://github.com/lndaquino/profile-photo-selection/blob/master/src/adjusting-picture.png?raw=true)
+
+
 
 Finally, it updates the profile photo with the cropped image:
+
+
+
 ![modal-input-selection](https://github.com/lndaquino/profile-photo-selection/blob/master/src/updated-profile-with-camera-photo.png?raw=true)
+
 
 
 ## Challenges

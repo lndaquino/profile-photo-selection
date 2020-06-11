@@ -21,6 +21,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
+![Lucas-photo](https://github.com/lndaquino/profile-photo-selection/src/foto_Lucas_1.jpg?raw=true)
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!

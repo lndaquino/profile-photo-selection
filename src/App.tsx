@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useCallback} from 'react';
+import AvatarInput from './components/AvatarInput';
+import GlobalStyles from './globalStyles';
 
-function App() {
+import initialImg from './foto_Lucas_1.jpg';
+
+const App: React.FC = () => {
+  const [avatar, setAvatar] = useState(initialImg);
+
+  const handleAvatarChange = useCallback(async (newAvatar: string) =>{
+    console.log('Do something when a new cropped avatar is selected');
+    
+    // data64 string used at src property in img tag
+    // usage example <img src={newAvatar} alt='avatar'>
+    setAvatar(newAvatar);
+  },[]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <GlobalStyles />
+    <AvatarInput
+      avatar={avatar}
+      setNewAvatar={handleAvatarChange}
+    />
+    </>
   );
-}
+
+  
+};
 
 export default App;
